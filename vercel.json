@@ -1,13 +1,4 @@
 {
-  "buildCommand": "",
-  "outputDirectory": "",
-  "framework": "static",
   "cleanUrls": true,
-  "trailingSlash": false,
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ]
+  "trailingSlash": false
 }
