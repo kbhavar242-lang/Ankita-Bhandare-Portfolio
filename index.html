@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankita Bhandare — Clinical Psychologist &amp; Educator</title>
+  <meta name="description"
+    content="Portfolio of Ankita Abhijit Bhandare — Clinical Psychology graduate, B.Ed candidate, field researcher, and educator from Nashik, Maharashtra.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <style>
+    /* ===== RESET & BASE ===== */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 72px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #FAFAF8;
+      color: #2C2C2A;
+      font-size: 17px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #fff;
+      border-bottom: 1px solid #E0DDD8;
+      backdrop-filter: blur(8px);
+    }
+
+    .navbar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: #2C2C2A;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 15px;
+      font-weight: 500;
+      color: #6B6B68;
+      transition: color 0.25s;
+      position: relative;
+      padding: 4px 0;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #4A7C6F;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #2C2C2A;
+    }
+
+    .nav-links a.active::after,
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 22px;
+      color: #2C2C2A;
+      padding: 4px;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-bottom: 1px solid #E0DDD8;
+      padding: 16px 24px;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    .mobile-menu a {
+      font-size: 15px;
+      font-weight: 500;
+      color: #6B6B68;
+      padding: 8px 0;
+      border-bottom: 1px solid #f0ede8;
+    }
+
+    .mobile-menu a:last-child {
+      border-bottom: none;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 100px 0 60px;
+      position: relative;
+      overflow: hidden;
+      background: #FAFAF8;
+    }
+
+    /* Top-left botanical branch */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -20px;
+      left: -30px;
+      width: 380px;
+      height: 380px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400' fill='none'%3E%3Cpath d='M50 350 Q80 280 120 240 Q140 220 130 180 Q125 150 140 120 Q160 80 200 50' stroke='%234A7C6F' stroke-width='1.5' stroke-linecap='round' opacity='0.12'/%3E%3Cpath d='M140 120 Q170 130 190 110' stroke='%234A7C6F' stroke-width='1.2' stroke-linecap='round' opacity='0.10'/%3E%3Cpath d='M130 180 Q100 170 85 185' stroke='%234A7C6F' stroke-width='1.2' stroke-linecap='round' opacity='0.10'/%3E%3Cpath d='M120 240 Q150 235 165 255' stroke='%234A7C6F' stroke-width='1.2' stroke-linecap='round' opacity='0.10'/%3E%3Cellipse cx='200' cy='46' rx='6' ry='9' fill='%234A7C6F' opacity='0.08' transform='rotate(-30 200 46)'/%3E%3Cellipse cx='192' cy='108' rx='14' ry='7' fill='%234A7C6F' opacity='0.06' transform='rotate(20 192 108)'/%3E%3Cellipse cx='83' cy='186' rx='12' ry='6' fill='%234A7C6F' opacity='0.06' transform='rotate(-15 83 186)'/%3E%3Cellipse cx='167' cy='257' rx='11' ry='6' fill='%234A7C6F' opacity='0.06' transform='rotate(25 167 257)'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: contain;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Bottom-right botanical branch */
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      right: -20px;
+      width: 340px;
+      height: 340px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 360' fill='none'%3E%3Cpath d='M310 20 Q290 80 260 120 Q240 150 250 190 Q255 220 240 250 Q220 290 180 320' stroke='%234A7C6F' stroke-width='1.5' stroke-linecap='round' opacity='0.10'/%3E%3Cpath d='M240 250 Q210 245 200 265' stroke='%234A7C6F' stroke-width='1.2' stroke-linecap='round' opacity='0.08'/%3E%3Cpath d='M250 190 Q280 185 290 200' stroke='%234A7C6F' stroke-width='1.2' stroke-linecap='round' opacity='0.08'/%3E%3Cpath d='M260 120 Q230 115 220 130' stroke='%234A7C6F' stroke-width='1.2' stroke-linecap='round' opacity='0.08'/%3E%3Cellipse cx='178' cy='322' rx='8' ry='5' fill='%234A7C6F' opacity='0.06' transform='rotate(30 178 322)'/%3E%3Cellipse cx='218' cy='267' rx='10' ry='5' fill='%234A7C6F' opacity='0.05' transform='rotate(-20 218 267)'/%3E%3Cellipse cx='292' cy='202' rx='9' ry='5' fill='%234A7C6F' opacity='0.05' transform='rotate(15 292 202)'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: contain;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Scattered minimal leaf accents */
+    .hero-decor {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cpath d='M2 10 Q10 -2 18 10' stroke='%234A7C6F' stroke-width='0.8' fill='none' opacity='0.06'/%3E%3C/svg%3E"),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cellipse cx='8' cy='8' rx='5' ry='3' fill='%234A7C6F' opacity='0.03' transform='rotate(45 8 8)'/%3E%3C/svg%3E");
+      background-position: 15% 30%, 75% 65%;
+      background-size: 120px 72px, 100px 100px;
+      background-repeat: repeat;
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-greeting {
+      font-family: 'Inter', sans-serif;
+      font-size: 17px;
+      font-weight: 500;
+      color: #4A7C6F;
+      letter-spacing: 0.04em;
+      margin-bottom: 14px;
+    }
+
+    .hero-name {
+      font-size: 56px;
+      color: #2C2C2A;
+      margin-bottom: 18px;
+      line-height: 1.15;
+    }
+
+    .hero-designation {
+      font-size: 19px;
+      color: #6B6B68;
+      font-weight: 400;
+      margin-bottom: 16px;
+      letter-spacing: 0.01em;
+    }
+
+    .hero-tagline {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 19px;
+      color: #8A8A86;
+      margin-bottom: 36px;
+      max-width: 480px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #4A7C6F;
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 500;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(74, 124, 111, 0.25);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: #4A7C6F;
+      padding: 14px 30px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 500;
+      border: 1.5px solid #4A7C6F;
+      transition: transform 0.2s, background 0.2s;
+      cursor: pointer;
+    }
+
+    .btn-secondary:hover {
+      background: #f0f7f4;
+      transform: translateY(-2px);
+    }
+
+    .hero-photo {
+      flex-shrink: 0;
+      width: 340px;
+      height: 340px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid #fff;
+      box-shadow: 0 12px 40px rgba(44, 44, 42, 0.12), 0 4px 12px rgba(44, 44, 42, 0.06);
+      align-self: center;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: #AEAEA8;
+      font-size: 12px;
+      animation: floatDown 2s ease-in-out infinite;
+    }
+
+    .scroll-indicator i {
+      display: block;
+      font-size: 18px;
+      margin-top: 4px;
+    }
+
+    @keyframes floatDown {
+
+      0%,
+      100% {
+        transform: translateX(-50%) translateY(0);
+      }
+
+      50% {
+        transform: translateX(-50%) translateY(8px);
+      }
+    }
+
+    /* ===== ABOUT ===== */
+    .about {
+      background: #fff;
+    }
+
+    .section-heading {
+      font-size: 38px;
+      margin-bottom: 44px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-heading::after {
+      content: '';
+      display: block;
+      width: 48px;
+      height: 3px;
+      background: #4A7C6F;
+      margin-top: 12px;
+      border-radius: 2px;
+    }
+
+    .about-content {
+      max-width: 740px;
+    }
+
+    .about-content p {
+      margin-bottom: 22px;
+      color: #4A4A47;
+      font-size: 17px;
+    }
+
+    .pull-quote {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 22px;
+      color: #4A7C6F;
+      padding: 28px 0 28px 28px;
+      border-left: 3px solid #C9A84C;
+      margin: 36px 0;
+      line-height: 1.6;
+    }
+
+    .about-divider {
+      width: 60px;
+      height: 1px;
+      background: #E0DDD8;
+      margin: 20px 0;
+    }
+
+    /* ===== EDUCATION TIMELINE ===== */
+    .education {
+      background: #FAFAF8;
+    }
+
+    .timeline {
+      position: relative;
+      padding: 20px 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background: #4A7C6F;
+      opacity: 0.3;
+      top: 0;
+    }
+
+    .timeline-item {
+      display: flex;
+      width: 100%;
+      margin-bottom: 48px;
+      position: relative;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-item:nth-child(odd) {
+      justify-content: flex-start;
+      padding-right: calc(50% + 40px);
+    }
+
+    .timeline-item:nth-child(even) {
+      justify-content: flex-end;
+      padding-left: calc(50% + 40px);
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: 50%;
+      top: 24px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #4A7C6F;
+      border: 3px solid #FAFAF8;
+      transform: translateX(-50%);
+      z-index: 2;
+      box-shadow: 0 0 0 3px rgba(74, 124, 111, 0.15);
+    }
+
+    .timeline-card {
+      background: #fff;
+      border: 0.5px solid #E0DDD8;
+      border-radius: 12px;
+      padding: 24px 28px;
+      box-shadow: 0 2px 12px rgba(44, 44, 42, 0.04);
+      transition: transform 0.25s, box-shadow 0.25s;
+      width: 100%;
+    }
+
+    .timeline-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(44, 44, 42, 0.08);
+    }
+
+    .timeline-year {
+      display: inline-block;
+      background: #4A7C6F;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    .timeline-card h3 {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .timeline-card .institution {
+      font-size: 14px;
+      color: #6B6B68;
+      margin-bottom: 4px;
+    }
+
+    .timeline-card .grade {
+      font-size: 13px;
+      color: #4A7C6F;
+      font-weight: 500;
+      margin-top: 8px;
+    }
+
+    /* ===== EXPERIENCE ===== */
+    .experience {
+      background: #fff;
+    }
+
+    .exp-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .exp-card {
+      background: #fff;
+      border: 0.5px solid #E0DDD8;
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 2px 12px rgba(44, 44, 42, 0.04);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .exp-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(44, 44, 42, 0.08);
+    }
+
+    .exp-card h3 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .exp-org {
+      font-size: 15px;
+      color: #4A7C6F;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .exp-duration {
+      font-size: 14px;
+      color: #AEAEA8;
+      margin-bottom: 12px;
+    }
+
+    .exp-desc {
+      font-size: 15px;
+      color: #6B6B68;
+      line-height: 1.7;
+    }
+
+    .exp-location {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      color: #AEAEA8;
+      margin-top: 14px;
+    }
+
+    .exp-location i {
+      font-size: 11px;
+    }
+
+    /* ===== DOCUMENTS ===== */
+    .documents {
+      background: #FAFAF8;
+    }
+
+    .doc-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+
+    .doc-tab {
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      border: 1.5px solid #E0DDD8;
+      background: #fff;
+      color: #2C2C2A;
+      transition: all 0.2s;
+    }
+
+    .doc-tab:hover {
+      border-color: #4A7C6F;
+      color: #4A7C6F;
+    }
+
+    .doc-tab.active {
+      background: #4A7C6F;
+      color: #fff;
+      border-color: #4A7C6F;
+    }
+
+    .doc-panel {
+      display: none;
+    }
+
+    .doc-panel.active {
+      display: block;
+    }
+
+    .doc-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .doc-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: #fff;
+      border: 0.5px solid #E0DDD8;
+      border-radius: 12px;
+      padding: 18px 24px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .doc-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(44, 44, 42, 0.06);
+    }
+
+    .doc-icon {
+      font-size: 28px;
+      flex-shrink: 0;
+    }
+
+    .doc-info {
+      flex: 1;
+    }
+
+    .doc-info h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 3px;
+    }
+
+    .doc-info p {
+      font-size: 14px;
+      color: #AEAEA8;
+    }
+
+    .doc-view {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      background: #f0f7f4;
+      color: #4A7C6F;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .doc-view:hover {
+      background: #4A7C6F;
+      color: #fff;
+    }
+
+    .doc-view.disabled {
+      background: #f5f5f3;
+      color: #BFBFBA;
+      cursor: not-allowed;
+    }
+
+    /* ===== SKILLS ===== */
+    .skills {
+      background: #fff;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+    }
+
+    .skills-col h3 {
+      font-size: 24px;
+      margin-bottom: 22px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill-tag {
+      background: #f0f7f4;
+      color: #3a6b5f;
+      padding: 10px 20px;
+      border-radius: 24px;
+      font-size: 15px;
+      font-weight: 500;
+      transition: transform 0.2s;
+    }
+
+    .skill-tag:hover {
+      transform: translateY(-2px);
+    }
+
+    .lang-tags {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .lang-tag {
+      background: #fdf8ed;
+      color: #967a2f;
+      padding: 10px 22px;
+      border-radius: 24px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact {
+      background: #FAFAF8;
+    }
+
+    .contact-subtitle {
+      font-size: 17px;
+      color: #6B6B68;
+      max-width: 580px;
+      margin-bottom: 48px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+    }
+
+    .contact-info-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .contact-info-item i {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: #f0f7f4;
+      color: #4A7C6F;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .contact-info-item .info-label {
+      font-size: 12px;
+      color: #AEAEA8;
+      margin-bottom: 2px;
+    }
+
+    .contact-info-item .info-value {
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group label {
+      font-size: 13px;
+      font-weight: 500;
+      color: #6B6B68;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      padding: 12px 16px;
+      border: 1.5px solid #E0DDD8;
+      border-radius: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #2C2C2A;
+      background: #fff;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: #4A7C6F;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-submit {
+      align-self: flex-start;
+      background: #4A7C6F;
+      color: #fff;
+      border: none;
+      padding: 13px 32px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .form-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(74, 124, 111, 0.25);
+    }
+
+    .form-thanks {
+      display: none;
+      padding: 16px;
+      background: #f0f7f4;
+      border-radius: 8px;
+      color: #4A7C6F;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .form-thanks.show {
+      display: block;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      text-align: center;
+      padding: 32px 0;
+      font-size: 13px;
+      color: #AEAEA8;
+      border-top: 1px solid #E0DDD8;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .hero .container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 36px;
+      }
+
+      .hero-name {
+        font-size: 42px;
+      }
+
+      .hero-designation {
+        font-size: 17px;
+      }
+
+      .hero-tagline {
+        font-size: 17px;
+        margin: 0 auto 28px;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .hero-photo {
+        width: 260px;
+        height: 260px;
+      }
+
+      .exp-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .timeline::before {
+        left: 20px;
+      }
+
+      .timeline-item:nth-child(odd),
+      .timeline-item:nth-child(even) {
+        padding-left: 52px;
+        padding-right: 0;
+        justify-content: flex-start;
+      }
+
+      .timeline-dot {
+        left: 20px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 16px;
+      }
+
+      section {
+        padding: 56px 0;
+      }
+
+      .section-heading {
+        font-size: 30px;
+      }
+
+      .hero-name {
+        font-size: 36px;
+      }
+
+      .hero-designation {
+        font-size: 16px;
+      }
+
+      .hero-tagline {
+        font-size: 16px;
+      }
+
+      .hero-photo {
+        width: 220px;
+        height: 220px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .doc-tabs {
+        gap: 6px;
+      }
+
+      .doc-tab {
+        padding: 8px 14px;
+        font-size: 13px;
+      }
+
+      .pull-quote {
+        font-size: 19px;
+      }
+
+      .skill-tag {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+
+      .exp-card h3 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">Ankita Bhandare</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#documents">Documents</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#documents">Documents</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-decor"></div>
+    <div class="container">
+      <div class="hero-text" data-aos="fade-right" data-aos-duration="800">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Ankita Bhandare</h1>
+        <p class="hero-designation">Clinical Psychologist · Educator · Field Researcher</p>
+        <p class="hero-tagline">"Bridging the gap between mental health and education — one person at a time."</p>
+        <div class="hero-buttons">
+          <a href="#documents" class="btn-primary"><i class="fas fa-briefcase"></i> View My Work</a>
+          <a href="docs/ankita_resume.pdf" target="_blank" class="btn-secondary"><i class="fas fa-download"></i>
+            Download CV</a>
+        </div>
+      </div>
+      <div class="hero-photo" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+        <img src="assets/ankita_photo.jpg" alt="Ankita Bhandare">
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-heading" data-aos="fade-up">About Me</h2>
+      <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+        <p>I grew up in a small town in Nashik district with an early curiosity about why people think and feel the way
+          they do. That curiosity led me to psychology — not just as a subject, but as a lens through which I began to
+          understand human connection, resilience, and growth.</p>
+        <p>My academic journey took me from Nashik to Pune, where I completed my Master's in Clinical Psychology at
+          Abasaheb Garware College. Along the way, I worked in counselling centres, rehabilitation facilities, and
+          special schools — each experience teaching me something textbooks never could. I was also part of the National
+          Mental Health Survey (NMHS-2) team, collecting field data across Maharashtra and learning firsthand how mental
+          health intersects with communities.</p>
+        <p>Today, I'm pursuing my B.Ed because I believe education and mental health are inseparable. Every student I
+          meet reminds me why I chose this path — and why I keep going.</p>
+        <div class="pull-quote">
+          "Psychology is not just my profession — it is how I understand the world."
+        </div>
+        <div class="about-divider"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education" id="education">
+    <div class="container">
+      <h2 class="section-heading" data-aos="fade-up">Educational Journey</h2>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2017</span>
+            <h3>SSC — Secondary School</h3>
+            <p class="institution">K.R.T. High School, Mauje Sukene</p>
+            <p class="grade"><i class="fas fa-graduation-cap"></i> HSC Board · 78.80%</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2019</span>
+            <h3>HSC — Arts Stream</h3>
+            <p class="institution">K.K.W. Junior College, Pimplegaon Baswant</p>
+            <p class="grade"><i class="fas fa-graduation-cap"></i> State Board Maharashtra · 74.62%</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2022</span>
+            <h3>Bachelor of Arts — Psychology</h3>
+            <p class="institution">K.T.H.M. College, Nashik · Savitribai Phule Pune University</p>
+            <p class="grade"><i class="fas fa-graduation-cap"></i> CGPA 8.46 · Final Grade A+</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2024</span>
+            <h3>MA — Clinical Psychology</h3>
+            <p class="institution">Abasaheb Garware College (Autonomous), Pune · Savitribai Phule Pune University</p>
+            <p class="grade"><i class="fas fa-graduation-cap"></i> CGPA 8.25 · Final Grade A+ · 72.56%</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2025–26</span>
+            <h3>B.Ed — Bachelor of Education</h3>
+            <p class="institution">Bramha Valley Educational Institute, Anjeneri · Savitribai Phule Pune University</p>
+            <p class="grade"><i class="fas fa-spinner fa-spin"></i> Currently Pursuing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <h2 class="section-heading" data-aos="fade-up">Professional Experience</h2>
+      <div class="exp-grid">
+        <div class="exp-card" data-aos="fade-up" data-aos-delay="0">
+          <h3>Field Data Collector (FDC)</h3>
+          <p class="exp-org">National Mental Health Survey–2 (NMHS-2), Sassoon General Hospital, Pune</p>
+          <p class="exp-duration">May 2025 – February 2026</p>
+          <p class="exp-desc">Conducted field data collection across Maharashtra, coordinated with local authorities,
+            ensured data integrity, and prepared daily and weekly reports. Worked under BJ Government Medical College,
+            Pune.</p>
+          <span class="exp-location"><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</span>
+        </div>
+        <div class="exp-card" data-aos="fade-up" data-aos-delay="80">
+          <h3>Psychology Intern</h3>
+          <p class="exp-org">Manoday Clinic &amp; Sunshine Counselling Center, Nashik</p>
+          <p class="exp-duration">Internship</p>
+          <p class="exp-desc">Assisted in clinical counselling sessions, observed patient assessments, and supported
+            therapeutic processes under supervision.</p>
+          <span class="exp-location"><i class="fas fa-map-marker-alt"></i> Nashik, Maharashtra</span>
+        </div>
+        <div class="exp-card" data-aos="fade-up" data-aos-delay="0">
+          <h3>Education Intern</h3>
+          <p class="exp-org">Ankur Vidyamandir, FC Road, Pune</p>
+          <p class="exp-duration">Internship</p>
+          <p class="exp-desc">Worked with school students in an educational setting, supporting learning and
+            social-emotional development.</p>
+          <span class="exp-location"><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</span>
+        </div>
+        <div class="exp-card" data-aos="fade-up" data-aos-delay="80">
+          <h3>Clinical Intern</h3>
+          <p class="exp-org">Samyak Rehabilitation &amp; De-Addiction Center, Baner, Pune</p>
+          <p class="exp-duration">Internship</p>
+          <p class="exp-desc">Gained hands-on experience in rehabilitation settings, supporting patients in de-addiction
+            recovery programs.</p>
+          <span class="exp-location"><i class="fas fa-map-marker-alt"></i> Baner, Pune</span>
+        </div>
+        <div class="exp-card" data-aos="fade-up" data-aos-delay="0">
+          <h3>Special Educator Support</h3>
+          <p class="exp-org">Aashayein Special School, Wanawadi, Pune</p>
+          <p class="exp-duration">Work Experience</p>
+          <p class="exp-desc">Worked with children with special needs, applying psychology in real-world educational
+            support scenarios.</p>
+          <span class="exp-location"><i class="fas fa-map-marker-alt"></i> Wanawadi, Pune</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCUMENTS -->
+  <section class="documents" id="documents">
+    <div class="container">
+      <h2 class="section-heading" data-aos="fade-up">My Documents</h2>
+      <p class="contact-subtitle" data-aos="fade-up" data-aos-delay="50">All academic certificates, experience letters,
+        and internship documents organized for easy access.</p>
+
+      <div class="doc-tabs" data-aos="fade-up" data-aos-delay="100">
+        <button class="doc-tab active" data-tab="academic">Academic Certificates</button>
+        <button class="doc-tab" data-tab="experience-letters">Experience Letters</button>
+        <button class="doc-tab" data-tab="internship">Internship Documents</button>
+        <button class="doc-tab" data-tab="resume">Resume</button>
+      </div>
+
+      <!-- Academic -->
+      <div class="doc-panel active" id="panel-academic">
+        <div class="doc-list">
+          <div class="doc-card"><span class="doc-icon">📄</span>
+            <div class="doc-info">
+              <h4>SSC Marksheet 2017</h4>
+              <p>K.R.T. High School · 78.80%</p>
+            </div><a href="docs/ankita_ssc_2017.pdf" target="_blank" class="doc-view"><i
+                class="fas fa-external-link-alt"></i> View</a>
+          </div>
+          <div class="doc-card"><span class="doc-icon">📄</span>
+            <div class="doc-info">
+              <h4>HSC Marksheet 2019</h4>
+              <p>K.K.W. Junior College · 74.62%</p>
+            </div><a href="docs/ankita_hsc_2019.pdf" target="_blank" class="doc-view"><i
+                class="fas fa-external-link-alt"></i> View</a>
+          </div>
+          <div class="doc-card"><span class="doc-icon">📄</span>
+            <div class="doc-info">
+              <h4>BA Marksheet 2022</h4>
+              <p>K.T.H.M. College, SPPU · CGPA 8.46</p>
+            </div><a href="docs/ankita_ba_2022.pdf" target="_blank" class="doc-view"><i
+                class="fas fa-external-link-alt"></i> View</a>
+          </div>
+          <div class="doc-card"><span class="doc-icon">📄</span>
+            <div class="doc-info">
+              <h4>MA Clinical Psychology 2024</h4>
+              <p>Abasaheb Garware College · CGPA 8.25</p>
+            </div><a href="docs/ankita_ma_2024.pdf" target="_blank" class="doc-view"><i
+                class="fas fa-external-link-alt"></i> View</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Letters -->
+      <div class="doc-panel" id="panel-experience-letters">
+        <div class="doc-list">
+          <div class="doc-card"><span class="doc-icon">📄</span>
+            <div class="doc-info">
+              <h4>NMHS-2 Field Data Collector Certificate</h4>
+              <p>Sassoon Hospital, BJ Govt Medical College Pune · 2026</p>
+            </div><a href="docs/ankita_nmhs_letter.pdf" target="_blank" class="doc-view"><i
+                class="fas fa-external-link-alt"></i> View</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Internship Documents -->
+      <div class="doc-panel" id="panel-internship">
+        <div class="doc-list">
+          <div class="doc-card"><span class="doc-icon">📄</span>
+            <div class="doc-info">
+              <h4>Manoday Clinic &amp; Sunshine Counselling Center</h4>
+              <p>Nashik</p>
+            </div><a href="docs/ankita_intern_manoday.pdf" target="_blank" class="doc-view"><i
+                class="fas fa-external-link-alt"></i> View</a>
+          </div>
+          <div class="doc-card"><span class="doc-icon">📄</span>
+            <div class="doc-info">
+              <h4>Ankur Vidyamandir</h4>
+              <p>FC Road, Pune</p>
+            </div><a href="docs/ankita_intern_ankur.pdf" target="_blank" class="doc-view"><i
+                class="fas fa-external-link-alt"></i> View</a>
+          </div>
+          <div class="doc-card"><span class="doc-icon">📄</span>
+            <div class="doc-info">
+              <h4>Samyak Rehabilitation &amp; De-Addiction Center</h4>
+              <p>Baner, Pune</p>
+            </div><a href="docs/ankita_intern_samyak.pdf" target="_blank" class="doc-view"><i
+                class="fas fa-external-link-alt"></i> View</a>
+          </div>
+          <div class="doc-card"><span class="doc-icon">📄</span>
+            <div class="doc-info">
+              <h4>Aashayein Special School</h4>
+              <p>Wanawadi, Pune</p>
+            </div><a href="docs/ankita_intern_aashayein.pdf" target="_blank" class="doc-view"><i
+                class="fas fa-external-link-alt"></i> View</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resume -->
+      <div class="doc-panel" id="panel-resume">
+        <div class="doc-list">
+          <div class="doc-card"><span class="doc-icon">📄</span>
+            <div class="doc-info">
+              <h4>Ankita Bhandare — Latest Resume</h4>
+              <p>Updated 2026</p>
+            </div><a href="docs/ankita_resume.pdf" target="_blank" class="doc-view"><i
+                class="fas fa-external-link-alt"></i> View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS & LANGUAGES -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="section-heading" data-aos="fade-up">Skills &amp; Languages</h2>
+      <div class="skills-grid">
+        <div class="skills-col" data-aos="fade-up" data-aos-delay="0">
+          <h3>Professional Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Clinical Assessment &amp; Psychodiagnostics</span>
+            <span class="skill-tag">Counselling Process &amp; Skills</span>
+            <span class="skill-tag">Psychopathology</span>
+            <span class="skill-tag">Field Data Collection &amp; Reporting</span>
+            <span class="skill-tag">Student Development &amp; Support</span>
+            <span class="skill-tag">Special Education Support</span>
+            <span class="skill-tag">Report Writing</span>
+            <span class="skill-tag">Communication &amp; Leadership</span>
+            <span class="skill-tag">MSCIT Certified</span>
+          </div>
+        </div>
+        <div class="skills-col" data-aos="fade-up" data-aos-delay="100">
+          <h3>Languages</h3>
+          <div class="lang-tags">
+            <span class="lang-tag">English</span>
+            <span class="lang-tag">Hindi</span>
+            <span class="lang-tag">Marathi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-heading" data-aos="fade-up">Get in Touch</h2>
+      <p class="contact-subtitle" data-aos="fade-up" data-aos-delay="50">Whether you're a school, clinic, or
+        organization looking for a dedicated psychology professional — I'd love to connect.</p>
+      <div class="contact-grid">
+        <div data-aos="fade-up" data-aos-delay="100">
+          <ul class="contact-info-list">
+            <li class="contact-info-item"><i class="fas fa-envelope"></i>
+              <div>
+                <p class="info-label">Email</p>
+                <p class="info-value">ankitabhandare19@gmail.com</p>
+              </div>
+            </li>
+            <li class="contact-info-item"><i class="fas fa-phone"></i>
+              <div>
+                <p class="info-label">Phone</p>
+                <p class="info-value">9022705414</p>
+              </div>
+            </li>
+            <li class="contact-info-item"><i class="fas fa-map-marker-alt"></i>
+              <div>
+                <p class="info-label">Location</p>
+                <p class="info-value">Kasbe Sukene, Tal: Niphad, Dist: Nashik — 422302</p>
+              </div>
+            </li>
+            <li class="contact-info-item"><i class="fas fa-flag"></i>
+              <div>
+                <p class="info-label">Nationality</p>
+                <p class="info-value">Indian</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group"><label for="formName">Name</label><input type="text" id="formName"
+                placeholder="Your name" required></div>
+            <div class="form-group"><label for="formEmail">Email</label><input type="email" id="formEmail"
+                placeholder="you@example.com" required></div>
+            <div class="form-group"><label for="formMessage">Message</label><textarea id="formMessage"
+                placeholder="Write your message here..." required></textarea></div>
+            <button type="submit" class="form-submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+          </form>
+          <div class="form-thanks" id="formThanks">Thank you for reaching out! I'll get back to you soon.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Ankita Abhijit Bhandare · Designed with care</p>
+    </div>
+  </footer>
+
+  <!-- AOS.js -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({ duration: 700, easing: 'ease-out-cubic', once: true, offset: 80 });
+
+    // Mobile hamburger menu
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+      const icon = hamburgerBtn.querySelector('i');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-times');
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        const icon = hamburgerBtn.querySelector('i');
+        icon.classList.add('fa-bars');
+        icon.classList.remove('fa-times');
+      });
+    });
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (window.scrollY >= sectionTop) current = section.getAttribute('id');
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+      });
+    });
+
+    // Document tabs
+    const tabs = document.querySelectorAll('.doc-tab');
+    const panels = document.querySelectorAll('.doc-panel');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        panels.forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById('panel-' + tab.dataset.tab).classList.add('active');
+      });
+    });
+
+    // Contact form
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('formThanks').classList.add('show');
+    });
+  </script>
+</body>
+
+</html>
